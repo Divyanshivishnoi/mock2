@@ -1,22 +1,81 @@
-.search {
+
+.search-container {
     display: flex;
-    gap: 10px;
-    margin: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
   }
   
-  .search input {
-    flex: 1;
-    padding: 10px;
+  .search-box {
+    display: flex;
     border: 1px solid #ddd;
     border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    gap:10px;
   }
   
-  .find-job-btn {
-    background-color: #ff7f00;
-    color: #fff;
+  .search-input,
+  .location-input {
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    flex: 1;
   }
+  
+  .search-input {
+    border-right: 1px solid #ddd;
+  }
+  
+  .location-input {
+    border-right: 1px solid #ddd;
+  }
+  
+  .search-button {
+    background-color: #ff7f00;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #ff5700;
+  }
+  
+   Result Display 
+   .search-result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-result h3 {
+    font-size: 20px; 
+     margin-bottom: 10px;
+  }
+  
+  .search-result p {
+    font-size: 16px;
+    margin:5px 0;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
   
